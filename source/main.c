@@ -21,26 +21,26 @@ int main(void) {
         unsigned char tempA = ~PINA & 0x0F;
         unsigned char tempC = 0;
         
-        if(~tempA >= 13){
+        if(tempA >= 13){
             tempC = tempC | 0x3F;
         }
-        else if(~tempA >= 10){
+        else if(tempA >= 10){
             tempC = tempC | 0x3E;
         }
-        else if(~tempA >= 7){
+        else if(tempA >= 7){
             tempC = tempC | 0x3C;
         }
-        else if(~tempA >= 5){
+        else if(tempA >= 5){
             tempC = tempC | 0x38;
         }
-        else if(~tempA >= 3){
+        else if(tempA >= 3){
             tempC = tempC | 0x30;
         }
-        else if(~tempA >= 1){
+        else if(tempA >= 1){
             tempC = tempC | 0x20;
         }
 
-        if(~tempA <= 4){
+        if(tempA <= 4){
             tempC = tempC | 0x40;
         }
 
